@@ -1,0 +1,152 @@
+.header__first-page {
+    background-color: @white;
+    @media (min-width: @desktop-width) {
+      background-color: transparent;
+    }
+}
+
+@media (min-width: @tablet-width){
+    .header__first-page{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 114px;
+      align-items: center;
+    }
+}
+
+@media (min-width: @desktop-width){
+  .header__first-page {
+    height: 125px;
+    align-items: flex-end;
+  }
+}
+
+.logo {
+  display: block;
+  min-width: 30px;
+  min-height: 45px;
+
+  :hover {
+    opacity: 0.8;
+  }
+
+  :active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 174px;
+    min-height: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 202px;
+    min-height: 59px;
+  }
+}
+
+.logo-name{
+  margin-right: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .logo-name {
+    display: none;
+  }
+ }
+
+.header__small-wrap {
+  display: flex;
+  height: 44px;
+  margin: 0;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  padding: 0;
+  padding-left: 19px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 3px;
+    padding: 0;
+    justify-content: center;
+    width: 151px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: @mobile-only) {
+  .header__burger {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 20px;
+    padding-right: 23px;
+  }
+}
+
+.header__burger span {
+  background-color: @black;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 1.5px;
+  left: 3px;
+  top: 7px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease 0s;
+}
+
+.header__burger::after,
+.header__burger::before {
+  background-color: @black;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 1.5px;
+  left: 3px;
+  top: 7px;
+  transform: rotate(-45deg);
+}
+
+.close--burger span {
+  left: 0;
+  top: 9px;
+  width: 23px;
+  height: 2px;
+  transform: rotate(0deg);
+}
+
+.close--burger::after,
+.close--burger::before {
+  background-color: @black;
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+
+ .close--burger::after {
+  top: 0;
+  transform: rotate(0deg);
+ }
+
+ .close--burger::before {
+  bottom: 0;
+  top: 18px;
+  transform: rotate(0deg);
+ }
+

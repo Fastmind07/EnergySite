@@ -1,0 +1,150 @@
+.slogan__wrapper {
+  display: flex;
+  font-family: "Oswald-regular";
+  flex-direction: column;
+  align-items: center;
+  background: url(../../img/index-background-mobile@1x.jpg), -webkit-linear-gradient(#5EAA2F 302px, #ffffff 302px, #ffffff 100%);
+  background-size: auto 302px;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    align-items: flex-start;
+    position: relative;
+    min-height: 815px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 641px;
+    align-items: normal;
+    margin-bottom: 9px;
+  }
+}
+
+.slogan__header {
+  font-size: 36px;
+  line-height: 36px;
+  color: @white;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  margin-top: 27px;
+  text-align: center;
+  order: 1;
+
+   @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+    padding-left: 12.2%;
+    margin-top: 22px;
+    padding-top: 5px;
+    text-align: left;
+
+    }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 94px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 6.557377%;
+    }
+  }
+
+
+
+.slogan__text {
+  line-height: 14px;
+  color: @white;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  order: 2;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    text-align: left;
+    padding-left: 12.5%;
+    margin-top: 40px;
+    margin-bottom: 49px;
+   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 6.557377%;
+    margin-top: 40px;
+   }
+}
+
+
+.slogan__button {
+  font-family: "Oswald-regular";
+  width: 87.5%;
+  height: 40px;
+  color: @white;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: @basic_green;
+  border: none;
+  z-index: 2;
+  text-transform: uppercase;
+  order: 4;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+   @media (min-width: @tablet-width) {
+    order: 3;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 11.6%;
+    width: 244px;
+    height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 1px;
+    margin-left: 6.557377%;
+  }
+}
+
+.slogan__picture {
+  margin-top: 29px;
+  margin-bottom: 0px;
+  order: 3;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    top: 24.3%;
+    left: calc((100% - 768px) / 2  + 3.7760416%);
+
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 572px;
+    height: 509px;
+    top: -15px;
+    left: 558px;
+  }
+}
+
+.slogan__button:hover {
+  background-color: @basic_green-2;
+}
+
+.slogan__button:active {
+  background-color: @basic_green-2;
+  color: rgba(255, 255, 255, 0.3);
+}

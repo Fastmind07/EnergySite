@@ -1,0 +1,194 @@
+
+.footer__wrapper {
+  height: 100%;
+}
+
+.contacts__wrapper {
+  width: 100%;
+  height: 474px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 601px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: 100%;
+    height: 393px;
+  }
+}
+
+
+.contacts__map {
+  width: 100%;
+  height: 362px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    min-height: 400px;
+  }
+}
+
+.contacts__map span {
+  position: absolute;
+  top: 247px;
+  left: 132px;
+  width: 57px;
+  height: 53px;
+  background-image: url(../../img/map-pin.png\ 1.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    width: 110px;
+    height: 106px;
+    top: 54%;
+    left: 43%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 28%;
+    left: 47%;
+  }
+}
+
+.contacts__inner {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 1.25%;
+  min-height: 112px;
+  @media (min-width: @tablet-width) {
+    justify-content: space-around;
+    min-height: 201px;
+    align-items: center;
+    column-gap: 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    background-color:@white;
+    min-width: 570px;
+    min-height: 201px;
+    column-gap: 15px;
+    justify-content: center;
+    padding-right: 12px;
+
+  }
+}
+
+.contacts__inner-appeal {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald-regular";
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 19px;
+  padding-top: 28px;
+  text-transform: uppercase;
+  padding-bottom: 26px;
+  min-width: 138px;
+
+  @media (min-width: @tablet-width) {
+    width: 235px;
+    font-size: 20px;
+    line-height: 21px;
+    padding-top: 11px;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+}
+
+.contacts__inner-appeal span {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald-regular";
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 0;
+    padding-bottom: 3px;
+    text-align: start;
+
+  }
+}
+
+.contacts__inner-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    align-items: flex-end;
+    width: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: flex-start;
+  }
+}
+
+.contacts__inner-text {
+  width: 138px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    padding: 0;
+    padding-top: 5px;
+    text-align: end;
+    width: 155px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+  }
+}
+
+.contacts__inner-text-2 {
+  line-height: 20px;
+  padding-right: 20px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    padding: 0;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+}
+
+.contacts__wrapper--catalog {
+  background-color: @basic_gray;
+}
+
+.contacts__wrapper--form {
+  background-color: @basic_gray;
+}

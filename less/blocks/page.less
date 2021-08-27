@@ -1,0 +1,151 @@
+.page {
+  height: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Ariel", sans-serif;
+}
+
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100%;
+  margin: 0;
+  background-color: @white;
+  color: @black;
+
+}
+
+*::after, *::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/*
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1220px;
+    padding: 0 110px;
+  }
+
+  .index-page::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 695px;
+      background-color: @basic_green-2;
+      background-image: url(../img/index-background-desktop@1x.jpg);
+      background-repeat: no-repeat;
+      background-size: auto 695px;
+      background-position-x: right;
+  }
+}
+*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 92.1875%;
+    padding: 0 3.90625%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1220px;
+    padding: 0 110px;
+    }
+
+  .footer__wrapper--index,
+  .footer__wrapper--catalog,
+  .footer__wrapper--form {
+    background: #f2f2f2;
+  }
+
+  .index-page::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 695px;
+      background-color: @basic_green-2;
+      background-image: url(../img/index-background-desktop@1x.jpg);
+      background-repeat: no-repeat;
+      background-size: auto 695px;
+      background-position-x: right;
+  }
+}
+@media (min-width: @desktop-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width:  @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx){
+  .index-page::before {
+    background-image: url(../img/index-background-desktop@2x.jpg);
+  }
+}
+
+//CATALOG
+.main-wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.catalog-page {
+  position: relative;
+}
+
+.catalog-page::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: 1638px;
+  right: 0;
+  background-color: #68b738;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    top: 2596px;
+    width: 100%;
+    height: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 1516px;
+  }
+}
+
+.catalog-page::after {
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 50px;
+    background: @white;
+    height: 20px;
+    top: 1514px;
+    left: calc((100% - 1440px) / 2 + 72px);
+    z-index: -1;
+  }
+}
