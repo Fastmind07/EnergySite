@@ -156,25 +156,30 @@
     align-items: flex-end;
   }
 }
-.logo {
+.logo,
+.logo img {
   display: block;
   min-width: 30px;
   min-height: 45px;
 }
-.logo :hover {
+.logo :hover,
+.logo img :hover {
   opacity: 0.8;
 }
-.logo :active {
+.logo :active,
+.logo img :active {
   opacity: 0.6;
 }
 @media (min-width: 768px) {
-  .logo {
+  .logo,
+  .logo img {
     min-width: 174px;
     min-height: 51px;
   }
 }
 @media (min-width: 1440px) {
-  .logo {
+  .logo,
+  .logo img {
     min-width: 202px;
     min-height: 59px;
   }
