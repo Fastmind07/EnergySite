@@ -488,7 +488,7 @@
 }
 .slogan__picture {
   margin-top: 29px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   order: 3;
 }
 @media (min-width: 768px) {
@@ -507,6 +507,18 @@
     height: 509px;
     top: -15px;
     left: 558px;
+  }
+}
+@media (min-width: 768px) {
+  .slogan-img {
+    width: 709px;
+    height: 609px;
+  }
+}
+@media (min-width: 1440px) {
+  .slogan-img {
+    width: 550px;
+    height: 502px;
   }
 }
 .slogan__button:hover {
