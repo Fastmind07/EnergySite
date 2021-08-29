@@ -16,14 +16,14 @@
   font-display: swap;
   font-weight: normal;
   font-style: normal;
-  src: url(../../fonts/oswaldregular.woff) format("woff"), url(../../fonts/oswaldregular.woff2) format("woff2");
+  src: url(../fonts/oswaldregular.woff) format("woff"), url(../fonts/oswaldregular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Oswald-medium";
   font-display: swap;
   font-weight: 500;
   font-style: normal;
-  src: url(../../fonts/oswaldmedium.woff) format("woff"), url(../../fonts/oswaldmedium.woff2) format("woff2");
+  src: url(../fonts/oswaldmedium.woff) format("woff"), url(../fonts/oswaldmedium.woff2) format("woff2");
 }
 .page {
   height: 100%;
@@ -48,41 +48,6 @@
   border: 0;
   box-sizing: border-box;
 }
-/*
-.container {
-  width: 320px;
-  margin: 0 auto;
-}
-
-@media (min-width: @tablet-width) {
-  .container {
-    width: 708px;
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .container {
-    width: 1220px;
-    padding: 0 110px;
-  }
-
-  .index-page::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 695px;
-      background-color: @basic_green-2;
-      background-image: url(../img/index-background-desktop@1x.jpg);
-      background-repeat: no-repeat;
-      background-size: auto 695px;
-      background-position-x: right;
-  }
-}
-*/
 .container {
   width: 100%;
   margin: 0 auto;
@@ -112,7 +77,7 @@
     width: 50%;
     height: 695px;
     background-color: #5EAA2F;
-    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto 695px;
     background-position-x: right;
@@ -120,7 +85,7 @@
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
   .index-page::before {
-    background-image: url(../img/index-background-desktop@2x.jpg);
+    background-image: url("../img/index-background-desktop@2x.jpg");
   }
 }
 .main-wrapper {
@@ -329,7 +294,7 @@
 .navigation__item {
   text-decoration: none;
   display: block;
-  font-family: "Oswald-medium";
+  font-family: "Oswald-medium", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -341,7 +306,7 @@
 }
 @media (min-width: 768px) {
   .navigation__item {
-    font-family: "Oswald-regular";
+    font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     line-height: 24px;
     border: none;
@@ -399,10 +364,10 @@
 }
 .slogan__wrapper {
   display: flex;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   flex-direction: column;
   align-items: center;
-  background: url(../../img/index-background-mobile@1x.jpg), -webkit-linear-gradient(#5EAA2F 302px, #ffffff 302px, #ffffff 100%);
+  background: url(../img/index-background-mobile@1x.jpg), -webkit-linear-gradient(#5EAA2F 302px, #ffffff 302px, #ffffff 100%);
   background-size: auto 302px;
   background-repeat: no-repeat;
   background-position: top;
@@ -484,7 +449,7 @@
   }
 }
 .slogan__button {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: 87.5%;
   height: 40px;
   color: #ffffff;
@@ -602,7 +567,7 @@
   position: relative;
 }
 .service__cards-term {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   grid-area: term;
   font-size: 24px;
   line-height: 37px;
@@ -682,7 +647,7 @@
 }
 .link-name {
   display: block;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -749,7 +714,7 @@
   content: "";
   width: 36px;
   height: 50px;
-  background-image: url(../../img/icon-cat-slim.svg);
+  background-image: url(../img/icon-cat-slim.svg);
   background-repeat: no-repeat;
   top: 61%;
   left: 40%;
@@ -777,7 +742,7 @@
   content: "";
   width: 67px;
   height: 50px;
-  background-image: url(../../img/icon-cat-pro.svg);
+  background-image: url(../img/icon-cat-pro.svg);
   background-repeat: no-repeat;
   top: 78%;
   left: 40%;
@@ -802,7 +767,7 @@
 }
 .features__header {
   display: block;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -916,16 +881,16 @@
   }
 }
 .leaf::after {
-  background-image: url(../../img/advantage-leaf@1x.png);
+  background-image: url(../img/advantage-leaf@1x.png);
 }
 .powder::after {
-  background-image: url(../../img/advantage-powder@1x.png);
+  background-image: url(../img/advantage-powder@1x.png);
 }
 .dining::after {
-  background-image: url(../../img/advantage-dining@1x.png);
+  background-image: url(../img/advantage-dining@1x.png);
 }
 .clock::after {
-  background-image: url(../../img/advantage-clock@1x.png);
+  background-image: url(../img/advantage-clock@1x.png);
 }
 @media (min-width: 768px) {
   .features__item-icon::before {
@@ -933,7 +898,7 @@
     content: "";
     top: -40px;
     right: -167px;
-    font-family: "Oswald-regular";
+    font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 280px;
     line-height: 280px;
     height: 280px;
@@ -999,7 +964,7 @@
   display: block;
   margin: 0;
   padding: 0;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -1202,7 +1167,7 @@
   }
 }
 .input--border {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 24px;
   line-height: 24px;
   width: 82px;
@@ -1248,7 +1213,7 @@
   }
 }
 .price-label {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   line-height: 20px;
   min-width: 130px;
   text-transform: uppercase;
@@ -1276,7 +1241,7 @@
   border: none;
   font-size: 14px;
   background-color: transparent;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   line-height: 20px;
   text-transform: uppercase;
   width: 70px;
@@ -1415,7 +1380,7 @@
   height: 40px;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   box-sizing: border-box;
   border: none;
@@ -1502,37 +1467,6 @@
     background-color: transparent;
   }
 }
-/*
-@media (min-width: @tablet-width) {
-
-  .range-thumb {
-    display: block;
-    position: relative;
-    background-color: @white;
-    width: 34px;
-    height: 34px;
-    border: 1px solid @special_gray;
-    border-radius: 50%;
-    top: -15px;
-    left: 46%;
-    z-index: 0;
-  }
-
-
-
-  .range-thumb::after {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background-color: @basic_green;
-    border-radius: 50%;
-    top: 12.5px;
-    left: 12.5px;
-    z-index: 0;
-}
-}
-*/
 .range-solid:hover {
   opacity: 0.7;
 }
@@ -1634,7 +1568,7 @@
   left: 132px;
   width: 57px;
   height: 53px;
-  background-image: url(../../img/map-pin.png\ 1.svg);
+  background-image: url(../img/map-pin.png\ 1.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1690,7 +1624,7 @@
 .contacts__inner-appeal {
   margin: 0;
   padding: 0;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   line-height: 18px;
   padding-left: 19px;
@@ -1714,7 +1648,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   line-height: 18px;
   margin-top: 4px;
@@ -1998,7 +1932,7 @@
   }
 }
 .products__header {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 36px;
   line-height: 36px;
   border-top: 1px solid #d9d9d9;
@@ -2051,7 +1985,7 @@
   }
 }
 .button-catalog {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   line-height: 20px;
   border: none;
@@ -2202,7 +2136,7 @@
   }
 }
 .products__item-header {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -2311,7 +2245,7 @@
   }
 }
 .products__item-header-special {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -2368,7 +2302,7 @@
   }
 }
 .button-order {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   line-height: 20px;
   border: none;
@@ -2414,7 +2348,7 @@
 }
 .additional-goods__header {
   display: block;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -2528,7 +2462,7 @@
   }
 }
 .additional-goods__header-item {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 400;
   line-height: 16px;
   font-size: 16px;
@@ -2613,7 +2547,7 @@
   margin-right: 6.25%;
   margin-top: 39px;
   margin-bottom: 35px;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 87.5%;
@@ -2625,7 +2559,7 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .additional-goods__banner {
-    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -2638,12 +2572,12 @@
     justify-content: space-between;
     margin-top: 69px;
     margin-bottom: 76px;
-    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .additional-goods__banner {
-    background-image: url("../../img/gift-photo-tablet@2x.jpg");
+    background-image: url("../img/gift-photo-tablet@2x.jpg");
   }
 }
 @media (min-width: 1440px) {
@@ -2652,13 +2586,13 @@
     height: 289px;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     margin: 0;
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .additional-goods__banner {
-    background-image: url("../../img/gift-photo-desktop@2x.jpg");
+    background-image: url("../img/gift-photo-desktop@2x.jpg");
   }
 }
 .additional-goods__banner-text {
@@ -2734,7 +2668,7 @@
   }
 }
 .cat-profile__header {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -2769,7 +2703,7 @@
   }
 }
 .cat-profile__text {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -2805,7 +2739,7 @@
   }
 }
 .cat-profile_label {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -2828,7 +2762,7 @@
   border: 1px solid #e7e7e7;
   height: 43px;
   flex: 1 1  auto;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   color: #444444;
@@ -2865,7 +2799,7 @@
   }
 }
 .human-profile__header {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding: 0;
   font-size: 24px;
   line-height: 26px;
@@ -3016,7 +2950,7 @@
   }
 }
 .human-profile__label {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -3115,7 +3049,7 @@
 }
 .human-profile__comment {
   border: 1px solid #e7e7e7;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   color: #444444;
@@ -3182,7 +3116,6 @@
     width: 1220px;
     padding-left: 7.6388888%;
     padding-right: 7.6388888%;
-    row-gap: 0;
     justify-content: flex-start;
     -moz-column-gap: 87px;
          column-gap: 87px;
@@ -3190,7 +3123,7 @@
   }
 }
 .human-profile__label-checkbox {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -3254,7 +3187,7 @@
   margin-left: 6.25%;
   margin-right: 6.25%;
   color: #ffffff;
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   height: 40px;
   font-size: 16px;
   line-height: 20px;
@@ -3409,7 +3342,7 @@
   }
 }
 .radio_label {
-  font-family: "Oswald-regular";
+  font-family: "Oswald-regular", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
