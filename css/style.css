@@ -617,8 +617,8 @@
 .service__cards-link {
   grid-area: link;
   display: flex;
-  -moz-column-gap: 28px;
-       column-gap: 28px;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
   text-decoration: none;
   border-top: 1px solid #d9d9d9;
   box-sizing: border-box;
@@ -630,15 +630,15 @@
   .service__cards-link {
     border: none;
     padding-left: 32px;
-    -moz-column-gap: 38px;
-         column-gap: 38px;
+    -moz-column-gap: 26px;
+         column-gap: 26px;
   }
 }
 @media (min-width: 1440px) {
   .service__cards-link {
     padding-top: 23px;
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    -moz-column-gap: 27px;
+         column-gap: 27px;
   }
 }
 .service__cards-link:active .link-name,
@@ -660,14 +660,8 @@
 }
 .arrow-link {
   display: block;
-  transform: scale(2.6);
   width: 20px;
   height: 20px;
-}
-@media (min-width: 1440px) {
-  .arrow-link {
-    transform: scale(2.7);
-  }
 }
 .wrap-background-icon {
   position: absolute;
